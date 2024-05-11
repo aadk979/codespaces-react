@@ -122,11 +122,64 @@ function X() {
         {/*<div className="relative inset-0 bg-black [mask-image:radial-gradient(transparent_20%,white)]"></div>*/}
         {/*<div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>*/}
         </div>
+        <Acheivments />
       {/*<h1>Rotate device to landscape</h1>*/}
     </div>
       
     
   );
+}
+
+function Acheivments(){
+  const card_style = {
+    //height: '80%',
+    background: 'pink',
+    border: '1px solid red',
+    padding: '10px'
+  }
+
+  const clicked = {
+    //height: '80%',
+    color: 'blue' , 
+    scale: '4',
+    //zIndex: '99999',
+    background: 'pink',
+    border: '1px solid red',
+    padding: '10px'
+  }
+
+  function handle(id){
+    const array = ['first' , 'second' , 'third'];
+    array.forEach((name) => {
+      document.getElementById(name).style = card_style;
+    });
+
+    document.getElementById(id).style = clicked;
+  }
+
+  const sample = 'This is a certificate.'
+
+  return(
+    <>
+      <div style={{padding: '20px'  , display: 'flex' , flexDirection: 'row' , justifyContent: 'space-around' , alignItems: 'center' , border: '2px solid red' }}>
+        <div id='first' style={card_style} onClick={() => handle('first')}>
+          <img src='images/IMG_0156.jpg' />
+          <p style={{textAlign: 'center' , color:'white'}}>This is a certificate.</p>
+          <p style={{textAlign: 'center'}}>This is a certificate.</p>
+        </div>
+        <div id='second' style={card_style} onClick={() => handle('second')}>
+          <img src='images/IMG_0157.jpg'/>
+          <p style={{textAlign: 'center'}}>This is a certificate.</p>
+          <p style={{textAlign: 'center'}}>This is a certificate.</p>
+        </div>
+        <div id='third' style={card_style} onClick={() => handle('third')}>
+          <img src='images/certificate-cpraed-online-y2023-63ae8cdb56ca2c6d47013849_page-0001 2.jpg' />
+          <p style={{textAlign: 'center'}}>{sample}</p>
+          <p style={{textAlign: 'center'}}>{sample}</p>
+        </div>
+      </div>
+    </>
+  )
 }
 
 function App(){

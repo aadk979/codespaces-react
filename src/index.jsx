@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { CardStackDemo } from './card';
-import WaterDropGrid from './dots';
-import Test from './Test';
+//import WaterDropGrid from './dots';
+//import Test from './Test';
 //import { MacbookScrollDemo } from './Macbook';
 //import Core from './Core.jsx'
 //import reportWebVitals from './reportWebVitals';
@@ -13,7 +13,6 @@ root.render(
   <React.StrictMode>
     <App />
     <CardStackDemo />
-    <Test />
   </React.StrictMode>
 );
 
