@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { App , Acheivments }from './App';
 import { CardStackDemo } from './card';
 //import WaterDropGrid from './dots';
 //import Test from './Test';
@@ -13,6 +13,7 @@ root.render(
   <React.StrictMode>
     <App />
     <CardStackDemo />
+    <Acheivments />
   </React.StrictMode>
 );
 

@@ -122,7 +122,6 @@ function X() {
         {/*<div className="relative inset-0 bg-black [mask-image:radial-gradient(transparent_20%,white)]"></div>*/}
         {/*<div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>*/}
         </div>
-        <Acheivments />
       {/*<h1>Rotate device to landscape</h1>*/}
     </div>
       
@@ -205,5 +204,5 @@ function App(){
 }
 
 
-export default App;
+export {App , Acheivments} ;
 
